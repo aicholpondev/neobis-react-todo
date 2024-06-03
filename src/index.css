@@ -1,22 +1,41 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-body{
-  font-family: 'Inter', sans-serif;
-  /*background: grey;*/
+
+html {
+    background-color: #efefef;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
 }
-a{
-  text-decoration: none;
-  transition: .4s;
+
+input {
+    border: 0;
+    outline: 0;
+    font-family: "Montserrat", sans-serif;
 }
-.container{
-  width: 90%;
-  margin: 0 auto;
+
+.input-box {
+    padding-left: 1rem;
+    font-size: 2rem;
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    border-radius: 1rem;
 }
-button{
-  border: none;
-  cursor: pointer;
-  transition: .4s;
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+input:checked ~ .radio::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 1;
+}
+button {
+    cursor: pointer;
 }
